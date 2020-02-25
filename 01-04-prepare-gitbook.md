@@ -97,7 +97,11 @@ $ gitbool pdf
 ```
 
 
+
+关于gitbook的编写几使用，请参考这里：[使用 Gitbook 打造你的电子书](https://zhuanlan.zhihu.com/p/34946169)。
+
 ### 代码托管与在线发布
+
 #### 同步到GitHub
 
 首先，登陆GitHub，新建仓库:`rust-in-practice`。

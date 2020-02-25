@@ -1,0 +1,13 @@
+{
+    "title": "Rust语言实践",
+    "author": "Xiangyong Luo",
+    "description": "本人学习Rust语言的实践笔记。",
+    "language": "zh-hans",
+    "gitbook": "3.2.3",
+    "links": {
+        "sidebar": {
+            "我的Blog": "https://blog.csdn.net/solo_lxy"
+        }
+    }
+
+}
