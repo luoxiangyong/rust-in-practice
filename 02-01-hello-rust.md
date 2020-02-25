@@ -1,6 +1,6 @@
 ## 你好，Rust！
 
-### 准备编译器及代码托管库
+### 准备编辑器及代码托管库
 
 在开始开发之前请确保安装了Vim编辑器，我们的简单程序使用她来输入代码，没有安装的同学，请使用下面的命令：
 
@@ -36,8 +36,8 @@ $ ls -a
 输入`vim .gitignore`过滤不需要代码托管的文件。进入vim后，键入`i`进入插入命令模式，输入：
 
 ```
-./**/target/
-./**/Cargo.lock
+/**/target/
+/**/Cargo.lock
 ```
 
 单击键盘的左上角的`ESC`,输入`:wq`，保存文件并退出。
@@ -187,3 +187,29 @@ $ ./target/debug/hello_rust
 
 ### 提交今天的成果
 
+使用如下命令提交今天的成果到github网站：
+
+```bash
+$ git add .
+$ git commit -m "添加chapter01/hello_rust项目"
+$ git push
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+$ git log
+commit 4bf8a6c34340525c8f396ee474cbb4c38c34ab85 (HEAD -> master, origin/master)
+Author: Luo Xiangyong <luoxiangyong@topgridcloud.com>
+Date:   Tue Feb 25 17:09:45 2020 +0800
+
+    添加chapter01/hello_rust项目
+
+commit fbfeb8382e255e39ce59bf60ae02060174a01992
+Author: Luo Xiangyong <luoxiangyong@topgridcloud.com>
+Date:   Tue Feb 25 16:13:41 2020 +0800
+
+    第一次提交
+
+```
+
+:ok_hand:，OK,今天的工作完成！
