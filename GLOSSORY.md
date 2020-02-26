@@ -1,5 +1,5 @@
-# TOML
+## TOML
 Tom's Obvious Minimal Language
 
-# YAML
+## YAML
 Yeah Another Markup Language
