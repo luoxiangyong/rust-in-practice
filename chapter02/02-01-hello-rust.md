@@ -100,7 +100,7 @@ $ ls -a
 
 关于Vim的使用，这里有一个[命令速查表](https://github.com/skywind3000/awesome-cheatsheets/blob/master/editors/vim.txt)。还不过瘾的话，我还给大家提供了一张漂亮的速查图片:
 
-![给程序员准备的Vim命令速查表](./asserts/vim-for-programmer-01.png)
+![给程序员准备的Vim命令速查表](./assets/vim-for-programmer-01.png)
 
 ### 创建项目并运行
 

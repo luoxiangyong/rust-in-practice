@@ -65,7 +65,7 @@ description = "一个简单的库演示"
 license = "MIT"
 keywords = ["demo", "rlib"]
 readme = "README.md"
-documentation = "本库是一些演示简单计算的函数集合。"
+documentation = "https://github.com/luoxiangyong/gprl_lib_demo"
 ```
 
 
@@ -330,5 +330,9 @@ $ cargo package
 $ cargo publish
 ```
 
+注意，必须能安装以前的方式现将本库提交到github上的一个独立的库，填写必要的Cargo.toml中package段中的相关字段才能正确发布。最后一天命令成功后，就可以在的的`Dashboard`中看到刚才发布的crate库了:
 
+![my crate](./assets/crates.io-lib.png)
+
+现在好了，全世界都可以使用了！
 
