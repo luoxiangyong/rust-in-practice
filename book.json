@@ -8,6 +8,12 @@
         "sidebar": {
             "我的Blog": "https://blog.csdn.net/solo_lxy"
         }
-    }
+    },
+    
+    "variables":{
+        "testVar":1,
+        "chapterIndex":1
+    },
+    "plugins": ["advanced-emoji","code","katex"]
 
 }
