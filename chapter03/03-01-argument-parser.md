@@ -1,6 +1,6 @@
 ## CLAP命令行解析
 
-首先到https://crates.io 上用`command line`搜索，我们可以发下，下载两最大的是一个叫clap(Command Line Argument Parser for Rust)的库， 官方介绍说它是一个简单、高效并且特性丰富的库，专门用来做命令行解析，而且支持之命令。目前很多知名的工具都支持子命令，比如我们使用的cargo，用于容器的docker等等。简单看看官方的示例，使用起来还比较简单。
+首先到https://crates.io 上用`command line`搜索，我们可以发现，下载两最大的是一个叫clap(Command Line Argument Parser for Rust)的库， 官方介绍说它是一个简单、高效并且特性丰富的库，专门用来做命令行解析，而且支持之命令。目前很多知名的工具都支持子命令，比如我们使用的cargo，用于容器的docker等等。简单看看官方的示例，使用起来还比较简单。
 
 我们就使用这个库来开发一个简单的程序`gprl-compute`，这个程序接受命令行参数，打印计算结果，使用方式如下：
 
