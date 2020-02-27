@@ -17,7 +17,7 @@
 
 在第二节中，为了让全世界的人都能使用我们开发的库，我满心欢喜的把她发布到了https://crates.io上，现在你可以在该站点上搜索到这个库了。
 
-![搜索我的库](./assets/crates.io-my-lib.png)
+![搜索我的库](../assets/crates.io-my-lib.png)
 
 下面在chapter01目录下开始我们的工作，项目名字为`use_external_crate`。
 
@@ -65,7 +65,7 @@ gprl-lib-demo = "^0.1.0"
 $ cargo run
   Downloaded gprl-lib-demo v0.1.2
    Compiling gprl-lib-demo v0.1.2
-   Compiling use_external_crate v0.1.0 (/home/luoxiangyong/writing-book/rust-in-practice-code/chapter-01/use_external_crate)
+   Compiling use_external_crate v0.1.0 (/home/luoxiangyong/writing-book/rust-in-practice-code/chapter-02/use_external_crate)
     Finished dev [unoptimized + debuginfo] target(s) in 4.16s
      Running `target/debug/use_external_crate`
 本程序演示如何使用外部库
@@ -96,7 +96,7 @@ gprl-lib-demo = {git = "https://github.com/luoxiangyong/gprl_lib_demo.git",branc
 $ cargo run
     Updating git repository `https://github.com/luoxiangyong/gprl_lib_demo.git`
    Compiling gprl-lib-demo v0.1.2 (https://github.com/luoxiangyong/gprl_lib_demo.git#9c537b1e)
-   Compiling use_external_crate v0.1.0 (/home/luoxiangyong/writing-book/rust-in-practice-code/chapter-01/use_external_crate)
+   Compiling use_external_crate v0.1.0 (/home/luoxiangyong/writing-book/rust-in-practice-code/chapter-02/use_external_crate)
     Finished dev [unoptimized + debuginfo] target(s) in 3.32s
      Running `target/debug/use_external_crate`
 本程序演示如何使用外部库
@@ -145,8 +145,8 @@ gprl-lib-demo = { path = "../gprl_lib_demo" }
 
 ```bash
 $ cargo run
-   Compiling gprl-lib-demo v0.1.2 (/home/luoxiangyong/writing-book/rust-in-practice-code/chapter-01/gprl_lib_demo)
-   Compiling use_external_crate v0.1.0 (/home/luoxiangyong/writing-book/rust-in-practice-code/chapter-01/use_external_crate)
+   Compiling gprl-lib-demo v0.1.2 (/home/luoxiangyong/writing-book/rust-in-practice-code/chapter-02/gprl_lib_demo)
+   Compiling use_external_crate v0.1.0 (/home/luoxiangyong/writing-book/rust-in-practice-code/chapter-02/use_external_crate)
     Finished dev [unoptimized + debuginfo] target(s) in 0.90s
      Running `target/debug/use_external_crate`
 本程序演示如何使用外部库

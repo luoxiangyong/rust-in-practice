@@ -119,7 +119,7 @@ mod tests {
 
 ```bash
 cargo test
-   Compiling gprl-lib-demo v0.1.0 (/home/luoxiangyong/writing-book/rust-in-practice-code/chapter-01/gprl-lib-demo)
+   Compiling gprl-lib-demo v0.1.0 (/home/luoxiangyong/writing-book/rust-in-practice-code/chapter-02/gprl-lib-demo)
     Finished test [unoptimized + debuginfo] target(s) in 0.42s
      Running target/debug/deps/gprl_lib_demo-164c078fb443f2d9
 
@@ -220,7 +220,7 @@ pub fn compute_add(a:i32,b:i32) -> i32 {
 
 ```bash
 $ cargo test
-   Compiling gprl-lib-demo v0.1.0 (/home/luoxiangyong/writing-book/rust-in-practice-code/chapter-01/gprl_lib_demo)
+   Compiling gprl-lib-demo v0.1.0 (/home/luoxiangyong/writing-book/rust-in-practice-code/chapter-02/gprl_lib_demo)
     Finished test [unoptimized + debuginfo] target(s) in 0.60s
      Running target/debug/deps/gprl_lib_demo-164c078fb443f2d9
 
@@ -293,7 +293,7 @@ fn bench_compute_sub(b:&mut Bencher) {
 
 ```bash
 cargo bench
-   Compiling gprl-lib-demo v0.1.0 (/home/luoxiangyong/writing-book/rust-in-practice-code/chapter-01/gprl_lib_demo)
+   Compiling gprl-lib-demo v0.1.0 (/home/luoxiangyong/writing-book/rust-in-practice-code/chapter-02/gprl_lib_demo)
     Finished bench [optimized] target(s) in 2.58s
      Running target/release/deps/gprl_lib_demo-efbc3985baeb47b7
 
@@ -332,7 +332,7 @@ $ cargo publish
 
 注意，必须能安装以前的方式现将本库提交到github上的一个独立的库，填写必要的Cargo.toml中package段中的相关字段才能正确发布。最后一天命令成功后，就可以在的的`Dashboard`中看到刚才发布的crate库了:
 
-![my crate](./assets/crates.io-lib.png)
+![my crate](../assets/crates.io-lib.png)
 
 现在好了，全世界都可以使用了！
 

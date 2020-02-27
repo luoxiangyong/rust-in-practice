@@ -100,15 +100,15 @@ $ ls -a
 
 关于Vim的使用，这里有一个[命令速查表](https://github.com/skywind3000/awesome-cheatsheets/blob/master/editors/vim.txt)。还不过瘾的话，我还给大家提供了一张漂亮的速查图片:
 
-![给程序员准备的Vim命令速查表](./assets/vim-for-programmer-01.png)
+![给程序员准备的Vim命令速查表](../assets/vim-for-programmer-01.png)
 
 ### 创建项目并运行
 
 使用如下命令创建你好rust项目：
 
 ```bash
-$ mkdir chapter-01
-$ cd chapter-01
+$ mkdir chapter-02
+$ cd chapter-02
 $ cargo new --bin hello_rust
      Created binary (application) `hello_rust` package
 ```
@@ -145,7 +145,7 @@ fn main() {
 
 ```bash
 $ cargo run
-   Compiling hello_rust v0.1.0 (/home/luoxiangyong/writing-book/rust-in-practice-code/chapter-01/hello_rust)
+   Compiling hello_rust v0.1.0 (/home/luoxiangyong/writing-book/rust-in-practice-code/chapter-02/hello_rust)
     Finished dev [unoptimized + debuginfo] target(s) in 5.05s
      Running `target/debug/hello_rust`
 嗨，世界!
