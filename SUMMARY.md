@@ -18,7 +18,19 @@
   * [２.3 使用外部库](chapter02/02-03-use_external_crate.md)
 * [第3章　常用辅助库](chapter03/03-common-auxiliay-crate.md)
   * [3.1 CLAP命令行解析](chapter03/03-01-argument-parser.md)  
+  * [3.2 日志记录](chapter03/03-02-logging.md)
+  * [3.3 JSON](chapter03/03-03-json.md)
+  * [3.4 INI](chapter03/03-04-ini.md)
+  * [3.5 YAML](chapter03/03-05-yaml.md)
+* [第４章　程序调试](chapter04/04-debug.md)
+  * [4.1 GDB](chapter04/04-01-gdb.md)  
+  * [4.２ LLDB](chapter04/04-02-lldb.md)
 
+## 数据库篇
+* [第5章　Redis](chapter05/05-redis.md)
+* [第6章　Sqlite](chapter06/06-sqlite.md)
+* [第7章　PostgreSQL](chapter07/07-postgresql.md)
+* [第8章　MongoDB](chapter08/08-mongodb.md)
 ##  语言交互篇
 
 ##  并发与分布式篇
@@ -26,7 +38,7 @@
 ##  网络篇
 
 
-##  数据库篇
+##  
 
 * [术语表](GLOSSORY.md)
 * [参考书目](bibliography.md)
