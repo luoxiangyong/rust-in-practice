@@ -32,12 +32,17 @@
 
 ## 用户界面篇
 * [第9章　GTK](chapter09/09-gtk.md)
+  * [9.1 GTK-RS介绍](chapter09/09-01-gtkrs-introduce.md)  
+  * [9.2 第一个GTK程序](chapter09/09-02-app-demo.md)  
+  * [9.3 使用Glade构建界面](chapter09/09-03-glade.md)  
+
 * [第10章　OrbTk](chapter10/10-orbtk.md)
+
 * [第11章　SDL](chapter11/11-sdl.md)
 
 ##  语言交互篇
 * [第12章　C/CPP与Rust](chapter12/12-c-cpp.md)
-* [第13章　Python](chapter13/13-python.md)
+* [第13章　Python与Rust](chapter13/13-python.md)
 * [第14章　Julia与Rust](chapter14/14-julia.md)
 * [第15章　WebAssemble与Rust](chapter15/15-webassemble.md)
 
