@@ -387,8 +387,6 @@ sqlite-demo.db
 
 ## 开始编码
 
-
-
 ### 创建工程并准备数据
 
 ```bash
@@ -410,7 +408,9 @@ sqlite> .exit
 
 我们创建了一个数据库，在其中建立了一个叫`my_demo_apps`表，同时往里面添加了三条数据。
 
+crates.io上关于sqlite使用的比较多的crate有`sqlite`,`rusqlite`,`diesel`等。
 
+#### 使用sqlite crate
 
 下面开始编码测试下吧：
 
@@ -450,6 +450,79 @@ fn main() {
         println!("");
         true
     }).unwrap();
+}
+```
+
+运行结果为：
+
+```bash
+$ cargo run
+修改前的数据为：
+id = 1 | name = gprl-sqlite3-demo | version = 0.1.0 | authors = 罗 | 
+id = 2 | name = gprl-redis-demo | version = 0.1.0 | authors = Luo Xiangyong <luoxiangyong@topgridcloud.com> | 
+id = 3 | name = gprl-lib-demo | version = 0.1.3 | authors = Luo Xiangyong <luoxiangyong@topgridcloud.com> | 
+修改后的数据为：
+id = 1 | name = gprl-sqlite3-demo | version = 0.1.0 | authors = 祥勇 | 
+id = 2 | name = gprl-redis-demo | version = 0.1.0 | authors = Luo Xiangyong <luoxiangyong@topgridcloud.com> | 
+id = 3 | name = gprl-lib-demo | version = 0.1.3 | authors = Luo Xiangyong <luoxiangyong@topgridcloud.com> | 
+```
+
+代码比较简单，直观，不做多解释。
+
+#### 使用rusqlite crate
+
+
+
+```rust
+use rusqlite::{params, Connection, Result};
+use time::Timespec;
+
+#[derive(Debug)]
+struct Person {
+    id: i32,
+    name: String,
+    time_created: Timespec,
+    data: Option<Vec<u8>>,
+}
+
+fn main() -> Result<()> {
+    let conn = Connection::open_in_memory()?;
+
+    conn.execute(
+        "CREATE TABLE person (
+                  id              INTEGER PRIMARY KEY,
+                  name            TEXT NOT NULL,
+                  time_created    TEXT NOT NULL,
+                  data            BLOB
+                  )",
+        params![],
+    )?;
+    let me = Person {
+        id: 0,
+        name: "Steven".to_string(),
+        time_created: time::get_time(),
+        data: None,
+    };
+    conn.execute(
+        "INSERT INTO person (name, time_created, data)
+                  VALUES (?1, ?2, ?3)",
+        params![me.name, me.time_created, me.data],
+    )?;
+
+    let mut stmt = conn.prepare("SELECT id, name, time_created, data FROM person")?;
+    let person_iter = stmt.query_map(params![], |row| {
+        Ok(Person {
+            id: row.get(0)?,
+            name: row.get(1)?,
+            time_created: row.get(2)?,
+            data: row.get(3)?,
+        })
+    })?;
+
+    for person in person_iter {
+        println!("Found person {:?}", person.unwrap());
+    }
+    Ok(())
 }
 ```
 
